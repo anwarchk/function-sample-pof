@@ -1,0 +1,10 @@
+---
+apiVersion: projectriff.io/v1alpha1
+kind: Function
+metadata:
+  name: greeter
+spec:
+  container:
+    image: achirakkattil/greeter:0.0.1
+  input: greetings
+  protocol: grpc
